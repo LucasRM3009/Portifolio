@@ -45,7 +45,7 @@ body {
 
 .cabecalhoPrincipal-titulo {
     font-family: 'Lobster';
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -98,78 +98,130 @@ body {
     width: 100vw;
     height: 100vh;
 
+    display: none;
+
     position: fixed;
     top: 0;
     z-index: 2;
-
-
+    
     backdrop-filter: blur(15px);
 }
 
-.container-buttonFechar {
-    position: relative;
-    top: -45px;
-    z-index: 2;
-    
-    max-width: 80%;
-    height: 35px;
+.conteudoPrincipal_SobreMim {
+    display: none;
+}
 
-    margin: 0 auto;        
+.container-buttonFechar {
+    max-width: 80%;
+
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    margin: 0 auto;
 }
 
 .botaoFechar {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(196, 7, 7);
-    color: white;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    background-color: rgb(230, 9, 9);
+    box-shadow: 0 5px 0 rgba(144, 3, 3, 0.87);
 
-    position: absolute;    
-    right: 10px;    
+    width: 30px;
 
-    padding: 5px 10px;
+    margin-right: 10px;
     
     border: none;
     border-radius: 5px;
     
     cursor: pointer;
-
-    box-shadow: 0 0 4px rgb(165, 39, 39);
-
-    transition: .2s background;
+        
+    transition: 500ms background;
 }
 
 .botaoFechar:hover {
-    background-color: rgb(160, 6, 6);
+    background-color: rgb(170, 11, 11);
+    box-shadow: 0 5px 0 rgba(82, 1, 1, 0.87);
+}
+
+.botaoFechar:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
 
 .conteudoPrincipal_SobreMim .container {
     max-width: 80%;
+    height: 80%;
+    max-height: 600px;
+    
+    position: fixed;
+    top: 85px;
+    left: 0;
+    right: 0;
+    z-index: 10;
 
-    position: relative;
-    top: -30px;
-    z-index: 2;
+    margin: 0 auto;
 
     border-radius: 12px;
 
-    background-color: rgba(10, 10, 10, 0.89);
+    background-color: rgba(26, 26, 26, 0.965);
+}
+
+.animationFadeIn {
+    animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .conteudoPrincipal_SobreMim-article {
-    height: 520px;
-    max-height: 1000px;
+    height: 100%;   
 
     padding: 20px;
+
+    border-radius: 10px;
+
     overflow: auto;
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: rgba(236, 233, 233, 0.8);
 }
 
-.conteudoPrincipal_SobreMim-article-foto {
-    width: 100px;
+.conteudoPrincipal_SobreMim-article::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.conteudoPrincipal_SobreMim-article::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(236, 233, 233, 0.8); 
+}
+
+.conteudoPrincipal_SobreMim-article::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 206, 206, 0.8); 
+}
+
+.conteudoPrincipal_SobreMim-foto {
+    width: 150px;
 
     float: left;
+
     margin-right: 25px;
+
+    border-radius: 12px;
 }
 
-.conteudoPrincipal_SobreMim-article-p {
+.conteudoPrincipal_SobreMim-descricao {
     font-family: Lato;
     font-size: .9em;
     line-height: 1.5;
@@ -192,7 +244,7 @@ body {
     
     padding: 0 20px;
 
-    margin: 1.5em auto;
+    margin: 1.5em auto 1em;
 }
 
 .conteudoPrincipal_Projetos .container {
@@ -246,7 +298,7 @@ body {
 
 .conteudoPrincipal_Projetos-descricao p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2em;
+    font-size: .95em;
     text-align: left;
 }
 
