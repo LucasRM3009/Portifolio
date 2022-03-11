@@ -104,7 +104,14 @@ body {
     top: 0;
     z-index: 2;
     
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+}
+
+@-moz-document url-prefix() {
+    .fundoDesfocado {
+        background: rgba(231, 231, 231, 0.931);
+    }
 }
 
 .conteudoPrincipal_SobreMim {
@@ -192,8 +199,6 @@ body {
     border-radius: 10px;
 
     overflow: auto;
-    scrollbar-width: thin;          /* "auto" or "thin" */
-    scrollbar-color: rgba(236, 233, 233, 0.8);
 }
 
 .conteudoPrincipal_SobreMim-article::-webkit-scrollbar {
