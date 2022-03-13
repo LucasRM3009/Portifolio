@@ -22,5 +22,11 @@ const projetos = [
         img: './img/lucas-rm.github.io_Projeto-Huddle_.png',
         titulo: 'projeto huddle',
         descricao: 'Projeto acadêmico feito em curso com objetivo de aplicar <b>posicionamento do conteúdo</b> do site e deixar o site <b>responsivo</b>, sendo compatível para celular, computador, ipads, entre outros dispositivos.'
+    },
+    {
+        link: 'https://lucas-rm.github.io/Projeto-Relogio/',
+        img: './img/lucas-rm.github.io_Projeto-Relogio_.png',
+        titulo: 'projeto relógio',
+        descricao: 'Projeto com intuito de representar um relógio em um site.'
     }
 ];

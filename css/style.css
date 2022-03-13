@@ -71,11 +71,11 @@ body {
     margin-left: 30px;
 }
 
-.cabecalhoPrincipal-nav-ul-itens a:hover {
+.cabecalhoPrincipal-nav-ul-itens > a:hover {
     color: rgb(204, 135, 71);
 }
 
-.cabecalhoPrincipal-nav-ul-itens a:hover::after {
+.cabecalhoPrincipal-nav-ul-itens:nth-child(-n + 3) > a:hover:after {
     content: "";
 
     position: absolute;
@@ -88,6 +88,39 @@ body {
     background-color: rgb(44, 99, 228);
 }
 
+.contatos {
+    display: flex;
+    justify-content: space-between;
+    width: 115px;
+
+    position: absolute;
+    right: 0;
+    
+    background-color: rgba(17, 17, 17, 0.965);
+    
+    padding: 10px;
+
+    margin: 8px -10px 0 0;
+
+    border-radius: 5px;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.contatos a {
+    font-size: 25px;
+    color: white;
+    
+    border: none;
+
+    transition: 200ms;
+}
+
+.contatos a:hover {
+    color: #11bafd;
+}
 
 
 /* CONTEÚDO PRINCIPAL */
@@ -176,11 +209,6 @@ body {
 
 .animationFadeIn {
     animation: fadeIn 1s linear;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 .conteudoPrincipal_SobreMim-article {
@@ -349,6 +377,10 @@ body {
 }
 
 
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 @media screen and (max-width: 768px) {
     .cabecalhoPrincipal .container {
@@ -368,6 +400,10 @@ body {
     .cabecalhoPrincipal-nav-ul-itens {
         margin: 0;
         padding: 10px;
+    }
+
+    .cabecalhoPrincipal-nav-ul-itens:nth-child(-n + 3) > a:hover:after {
+        top: 40px;
     }
 
     .conteudoPrincipal_SobreMim-article {
