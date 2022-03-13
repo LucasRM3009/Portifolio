@@ -1,20 +1,26 @@
 const projetos = [
     {
-        link: 'https://www.google.com',
-        img: './img/lucas-rm.github.io_Portfolio_.png',
-        titulo: 'Projeto 1',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo, quidem amet nesciunt aliquid fugit maiores dolores earum? Enim dolores blanditiis qui possimus reiciendis dolorum cumque facere quos consequatur eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus soluta doloremque ipsam nemo atque eum, repellat alias iure doloribus maiores dolorum voluptatum. Maxime hic quasi dolore sapiente ab voluptatum iure.'
+        link: 'https://lucas-rm.github.io/alura-midi/',
+        img: './img/lucas-rm.github.io_alura-midi_.png',
+        titulo: 'Alura MIDI',
+        descricao: 'Site feito em curso da plataforma Alura com o objetivo de tocar sons de instrumentos quando clicar em um botão ou quando pressionar a tecla <b>SPACE</b>.'
     },
     {
-        link: '#',
-        img: './img/lucas-rm.github.io_Portfolio_.png',
-        titulo: 'Projeto 2',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo, quidem amet nesciunt aliquid fugit maiores dolores earum? Enim dolores blanditiis qui possimus reiciendis dolorum cumque facere quos consequatur eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus soluta doloremque ipsam nemo atque eum, repellat alias iure doloribus maiores dolorum voluptatum. Maxime hic quasi dolore sapiente ab voluptatum iure.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo, quidem amet nesciunt aliquid fugit maiores dolores earum? Enim dolores blanditiis qui possimus reiciendis dolorum cumque facere quos consequatur eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus soluta doloremque ipsam nemo atque eum, repellat alias iure doloribus maiores dolorum voluptatum. Maxime hic quasi dolore sapiente ab voluptatum iure.'
+        link: 'https://lucas-rm.github.io/projeto-apeperia/',
+        img: './img/lucas-rm.github.io_projeto-apeperia_.png',
+        titulo: 'projeto apeperia',
+        descricao: 'Site feito em curso da plataforma Alura com intuito de aprender sobre <b>Layouts Responsivos (mobile)</b>.'
     },
     {
-        link: '#',
-        img: './img/lucas-rm.github.io_Portfolio_.png',
-        titulo: 'Projeto 3',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo, quidem amet nesciunt aliquid fugit maiores dolores earum? Enim dolores blanditiis qui possimus reiciendis dolorum cumque facere quos consequatur eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus soluta doloremque ipsam nemo atque eum, repellat alias iure doloribus maiores dolorum voluptatum. Maxime hic quasi dolore sapiente ab voluptatum iure.Ducimus soluta doloremque ipsam nemo atque eum, repellat alias iure doloribus maiores dolorum voluptatum. Maxime hic quasi dolore sapiente ab voluptatum iure.'
+        link: 'https://lucas-rm.github.io/alura-flexbox/',
+        img: './img/lucas-rm.github.io_alura-flexbox_.png',
+        titulo: 'alura flexbox',
+        descricao: 'Site feito em curso da plataforma Alura com intuito de aprender sobre <b>Flexbox</b>.'
+    },
+    {
+        link: 'https://lucas-rm.github.io/Projeto-Huddle/',
+        img: './img/lucas-rm.github.io_Projeto-Huddle_.png',
+        titulo: 'projeto huddle',
+        descricao: 'Projeto acadêmico feito em curso com objetivo de aplicar <b>posicionamento do conteúdo</b> do site e deixar o site <b>responsivo</b>, sendo compatível para celular, computador, ipads, entre outros dispositivos.'
     }
 ];
